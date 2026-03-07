@@ -1,0 +1,114 @@
+/* Mobile=========================== */
+@media (max-width: 575.98px) {}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    nav.navbar {
+        padding: 1rem 0;
+    }
+
+    nav.navbar .navbar-brand img {
+        width: 16dvw;
+    }
+
+    nav.navbar button>span {
+        font-size: 1.5rem;
+    }
+
+    nav.navbar .collapse {
+        padding-top: 1rem;
+    }
+
+    nav.navbar .nav-link {
+        margin-left: .9rem;
+        width: fit-content;
+    }
+
+    /* hero========= */
+    .hero {
+        padding-top: 2rem;
+    }
+
+    .hero .hero-info,
+    .hero .hero-photo {
+        width: 100%;
+    }
+
+    .hero .hero-info h1 {
+        text-align: center;
+    }
+
+    .hero .job-title {
+        margin: auto;
+    }
+
+    .desc {
+        text-align: justify;
+        margin-top: 1.5rem;
+        font-weight: 500;
+    }
+
+    .hero .action-buttons {
+        text-align: center;
+    }
+
+    /* about===================== */
+    section.about .about-info,
+    section.about .about-edu {
+        width: 100%;
+    }
+
+    section.about .edu-card p {
+        letter-spacing: 0rem;
+        text-align: left;
+    }
+    /* skills= */
+    .skills .skills-container{
+    flex-direction: column;
+}
+
+.skills .skills-container .card{
+    width:100%;
+}
+}
+
+/* tablet=========================== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    nav.navbar {
+        padding: 1rem 0;
+    }
+
+    nav.navbar .navbar-brand img {
+        width: 10dvw;
+    }
+
+    nav.navbar button>span {
+        font-size: 2rem;
+    }
+
+    nav.navbar .collapse {
+        padding-top: 1rem;
+    }
+
+    nav.navbar .nav-link {
+        width: fit-content;
+        font-size: 1.4rem;
+    }
+
+    /* about========================== */
+    section.about .edu-card p {
+    letter-spacing: 0rem;
+    text-align: left;
+}
+    section.about .edu-card  {
+        height: 25dvh;
+}
+/* skills */
+.skills .skills-container h3{
+    font-size: 1.2rem;
+}
+.skills .skills-container .skill p.api{
+    font-size: .95rem;
+}
+
+
+}
