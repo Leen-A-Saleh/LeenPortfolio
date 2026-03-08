@@ -61,14 +61,45 @@
         letter-spacing: 0rem;
         text-align: left;
     }
-    /* skills= */
-    .skills .skills-container{
-    flex-direction: column;
-}
 
-.skills .skills-container .card{
-    width:100%;
-}
+    /* skills= */
+    .skills .skills-container {
+        flex-direction: column;
+    }
+
+    .skills .skills-container .card {
+        width: 100%;
+    }
+
+    /* footer=================== */
+    footer .footer-about,
+    footer .footer-links,
+    footer .footer-contact {
+        text-align: center;
+    }
+
+    footer p {
+        width: 95%;
+    }
+
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links .d-flex {
+        justify-content: center;
+    }
+
+    footer h2 {
+        margin: auto;
+    }
+
+    .footer-contact {
+        padding-bottom: 1.5rem;
+    }
+
 }
 
 /* tablet=========================== */
@@ -96,19 +127,36 @@
 
     /* about========================== */
     section.about .edu-card p {
-    letter-spacing: 0rem;
-    text-align: left;
-}
-    section.about .edu-card  {
-        height: 25dvh;
-}
-/* skills */
-.skills .skills-container h3{
-    font-size: 1.2rem;
-}
-.skills .skills-container .skill p.api{
-    font-size: .95rem;
-}
+        letter-spacing: 0rem;
+        text-align: left;
+    }
 
+    section.about .edu-card {
+        height: 25dvh;
+    }
+
+    /* skills */
+    .skills .skills-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .skills .skills-container .skill p.api {
+        font-size: .95rem;
+    }
+
+    /* footer=================== */
+    footer .footer-about,
+    footer .footer-links,
+    footer .footer-contact {
+        text-align: center;
+    }
+
+    footer p {
+        text-align: center !important;
+    }
+
+    footer h2 {
+        width: 100% !important;
+    }
 
 }
