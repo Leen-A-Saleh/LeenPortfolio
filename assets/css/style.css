@@ -95,6 +95,7 @@ section .title {
 nav.navbar {
     background-color: var(--bg-dark);
     box-shadow: 0px -2px 4px var(--color-ocean);
+    z-index: 999999;
 }
 
 nav.navbar .navbar-brand img {
@@ -448,7 +449,7 @@ section.about .edu-card p {
 }
 
 .skills .skills-container .card {
-    flex: 1;
+    /* flex: 1; */
     background-color: var(--text-pure);
     padding: 2rem;
     border-radius: 10px;
@@ -465,68 +466,34 @@ section.about .edu-card p {
 
 .skills .skills-container .card h3 {
     text-align: center;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.skills .skills-container .skill {
-    margin-bottom: 1.5rem;
-}
-
-.skills .skills-container .skill p {
+.skills .skills-container .skill{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: .4rem;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.skills .skills-container .skill .bar {
-    height: .4rem;
-    background: var(--text-soft);
-    border-radius: 5px;
+.skills .skills-container .skill img{
+    width: 25%;
+    object-fit: cover;
 }
 
-.skills .skills-container .skill .fill {
-    height: 100%;
-    background: linear-gradient(135deg, var(--color-ocean), var(--color-emerald));
-    border-radius: .3rem;
+.skills .skills-container .card:last-child img{
+    width: 17%;
+}
+.skills .skills-container .card:last-child img[alt="figma logo"]{
+    width: 33%;
 }
 
-/* width */
-.skills .fill.html {
-    width: 100%;
+.skills .skills-container .card:nth-child(2) .skill{
+    justify-content: center;
 }
-
-.skills .fill.bootstrap {
-    width: 95%;
+.skills .skills-container .card:nth-child(2) img[alt="php logo"]{
+    width: 38%;
 }
-
-.skills .fill.js {
-    width: 70%;
-}
-
-.skills .fill.php {
-    width: 65%;
-}
-
-.skills .fill.mysql {
-    width: 88%;
-}
-
-.skills .fill.api {
-    width: 75%;
-}
-
-.skills .fill.git {
-    width: 90%;
-}
-
-.skills .fill.vscode {
-    width: 95%;
-}
-
-.skills .fill.figma {
-    width: 35%;
-}
-
 /* experience=========== */
 section.experience {
     padding: 3rem 0;
@@ -537,7 +504,7 @@ section.experience {
 
 section.experience .timeline {
     position: relative;
-    max-width: 40rem;
+    max-width: 35rem;
     margin: auto;
     padding-left: 2.4rem;
 }
@@ -555,10 +522,11 @@ section.experience .timeline::before {
 section.experience .exp-card {
     position: relative;
     background-color: var(--text-pure);
-    padding: 1.2rem;
+    padding: 1rem;
     margin-bottom: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+    width: 100%;
     transition: .5s;
 }
 
@@ -580,19 +548,25 @@ section.experience .exp-card .date {
 }
 
 section.experience .exp-card h4 {
-    margin: .4rem 0;
+    color: var(--bg-dark);
+    margin: .4rem 0 ;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 section.experience .exp-card h5 {
     font-size: .8rem;
     color: #666;
     margin-bottom: .9rem;
+    font-weight: 900;
 }
 
 section.experience .exp-card p {
     font-size: .9rem;
     line-height: 1.6;
     color: var(--bg-dark);
+    text-align: justify;
+    margin-top: 2rem;
 }
 
 section.experience .exp-card:hover {
@@ -1012,3 +986,5 @@ footer .footer-contact {
     border-radius: 0 0 20px0 20px;
     padding: 1.2rem 0;
 }
+
+
