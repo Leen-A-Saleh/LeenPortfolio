@@ -25,13 +25,22 @@
 
     /* hero========= */
     .hero {
-        padding-top: 2rem;
+        padding-top: 4rem;
+        margin-top: 4rem;
+        overflow: hidden;
     }
 
-    .hero .hero-info,
     .hero .hero-photo {
-        width: 100%;
+        width: 25rem;
+        height: 17rem;
+        margin: auto;
     }
+
+    .hero .hero-photo img {
+        object-fit: cover;
+        margin-top: 1rem;
+    }
+
 
     .hero .hero-info h1 {
         text-align: center;
@@ -49,6 +58,7 @@
 
     .hero .action-buttons {
         text-align: center;
+        margin-top: -2.5rem;
     }
 
     /* about===================== */
@@ -70,6 +80,27 @@
     .skills .skills-container .card {
         width: 100%;
     }
+
+    /* service====================== */
+    section.services {
+        height: 140dvh;
+    }
+
+    section.services .row {
+        justify-content: center;
+    }
+
+    /* contact================ */
+    section.contact .circle {
+        left: 2rem;
+    }
+
+    section.contact .rounding  img{
+        position: relative;
+        left: 3.5rem;
+}
+
+
 
     /* footer=================== */
     footer .footer-about,
