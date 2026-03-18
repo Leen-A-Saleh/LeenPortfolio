@@ -1,193 +1,601 @@
-/* Mobile=========================== */
-@media (max-width: 575.98px) {}
+@media (max-width: 1200px) {
 
-@media (min-width: 320px) and (max-width: 767.98px) {
-    nav.navbar {
-        padding: 1rem 0;
-    }
-
+    /* Navbar */
     nav.navbar .navbar-brand img {
-        width: 16dvw;
+        width: 6dvw;
     }
 
-    nav.navbar button>span {
-        font-size: 1.5rem;
-    }
-
-    nav.navbar .collapse {
-        padding-top: 1rem;
-    }
-
-    nav.navbar .nav-link {
-        margin-left: .9rem;
-        width: fit-content;
-    }
-
-    /* hero========= */
-    .hero {
-        padding-top: 4rem;
-        margin-top: 4rem;
-        overflow: hidden;
-    }
-
-    .hero .hero-photo {
-        width: 25rem;
-        height: 17rem;
-        margin: auto;
-    }
-
-    .hero .hero-photo img {
-        object-fit: cover;
-        margin-top: 1rem;
-    }
-
-
+    /* Hero */
     .hero .hero-info h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-photo-frame {
+        width: 19rem;
+        height: 19rem;
+    }
+
+    /* Skills */
+    .skills .skills-container {
+        flex-wrap: wrap;
+    }
+
+    .skills .skills-container .card {
+        flex: 1 1 calc(33% - 1rem);
+    }
+
+    /* Services */
+    section.services {
+        height: auto;
+        padding: 3rem 1.5rem;
+    }
+
+    section.services .card {
+        width: 18rem;
+    }
+}
+
+
+/* Tablet==================== */
+@media (max-width: 992px) {
+
+    /* Navbar */
+    nav.navbar .navbar-brand img {
+        width: 8dvw;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero .hero-row {
+        flex-direction: column-reverse;
+        align-items: center;
         text-align: center;
     }
 
-    .hero .job-title {
-        margin: auto;
+    .hero .hero-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero .hero-info>span {
+        margin-left: 0;
+    }
+
+    .hero .hero-info h1 {
+        font-size: 3rem;
     }
 
     .desc {
-        text-align: justify;
-        margin-top: 1.5rem;
-        font-weight: 500;
+        width: 85%;
+        text-align: center;
     }
 
     .hero .action-buttons {
-        text-align: center;
-        margin-top: -2.5rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .5rem;
     }
 
-    /* about===================== */
-    section.about .about-info,
-    section.about .about-edu {
+    .hero .action-buttons a {
+        margin-right: 0;
+    }
+
+    .hero-photo-frame {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    /* About =============*/
+    section.about .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    section.about .about-info {
         width: 100%;
     }
 
-    section.about .edu-card p {
-        letter-spacing: 0rem;
-        text-align: left;
+    section.about .about-edu {
+        width: 100%;
+        margin-top: 2rem;
     }
 
-    /* skills= */
+    section.about .edu-card {
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    /* Skills */
+    .skills .skills-container .card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    /* Services */
+    section.services {
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
+    section.services .cards .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    section.services .card {
+        width: 20rem;
+    }
+
+    /* Experience */
+    section.experience .timeline {
+        max-width: 100%;
+    }
+
+    /* Contact */
+    section.contact .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    section.contact .rounding {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    section.contact .contact-cards {
+        width: 100%;
+        max-width: 25rem;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+  
+    .icon:nth-child(2) {
+        right: -1.1rem;
+    }
+
+    .icon:nth-child(4) {
+        left: -1.1rem;
+    }
+
+    /* Footer */
+    footer .row {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    footer .footer-about,
+    footer .footer-links,
+    footer .footer-contact {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    nav.navbar .navbar-brand img {
+        width: 10dvw;
+    }
+
+    nav.navbar .collapse.show {
+        background-color: var(--bg-dark);
+        padding: 1rem;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    nav.navbar .navbar-nav {
+        flex-direction: column;
+        gap: .5rem;
+        margin-top: 0;
+    }
+
+    /* Section titles */
+    .title h2 {
+        font-size: 4rem;
+    }
+
+    .title h3 {
+        font-size: 1.8rem !important;
+    }
+
+    /* Hero */
+    .hero .hero-info h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-photo-frame {
+        width: 15rem;
+        height: 15rem;
+    }
+
+
+    .hero .job-title {
+        animation: typing 3s steps(25) forwards infinite alternate-reverse, blink .5s infinite;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 15rem;
+        }
+    }
+
+    /* Skills */
     .skills .skills-container {
         flex-direction: column;
     }
 
     .skills .skills-container .card {
+        flex: 1 1 100%;
+    }
+
+    /* Services */
+    section.services .cards .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.services .card {
         width: 100%;
+        max-width: 22rem;
     }
 
-    /* service====================== */
-    section.services {
-        height: 140dvh;
+    /* Projects =======================*/
+    section.projects {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
     }
 
-    section.services .row {
-        justify-content: center;
-    }
-
-    /* contact================ */
-    section.contact .circle {
-        left: 2rem;
-    }
-
-    section.contact .rounding  img{
-        position: relative;
-        left: 3.5rem;
-}
-
-
-
-    /* footer=================== */
-    footer .footer-about,
-    footer .footer-links,
-    footer .footer-contact {
+    /* contact======================= */
+    section.contact {
         text-align: center;
+        overflow-x: clip;
+        padding-bottom: 3rem;
     }
 
-    footer p {
-        width: 95%;
+    section.contact .title h2 {
+        font-size: 3rem;
+        letter-spacing: .2rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
+    section.contact .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 4rem;
+    }
+
+    section.contact .rounding {
+        width: 100%;
+        max-width: 17rem;
+        height: auto;
+        aspect-ratio: 1;
+        margin-inline: auto;
+    }
+
+    section.contact .circle {
+        inset: 0;
+        top: -.2rem !important;
+        left: -.1rem !important;
+        margin: auto;
+        width: 80%;
+        height: 80%;
+        /* top: auto;
+        left: auto; */
+    }
+
+    section.contact .icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .icon i {
+        font-size: 1.2rem;
+    }
+
+    .icon:nth-child(2) {
+        transform: translate(0, -50%);
+    }
+
+    .icon:nth-child(4) {
+        transform: translate(0, -50%);
+    }
+
+    section.contact .contact-cards {
+        width: 100%;
+        max-width: 20rem;
+        margin-inline: auto;
+        position: static;
+        gap: 1rem;
+    }
+
+    section.contact .contact-cards .card {
+        height: auto;
+        padding: 1rem;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .info h4 {
+        font-size: 1rem;
+    }
+
+    .info p {
+        font-size: .85rem;
+    }
+
+    .send {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: .9rem;
+    }
+
+    /* Footer ======================*/
     footer .row {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .footer-links .d-flex {
-        justify-content: center;
-    }
-
-    footer h2 {
-        margin: auto;
-    }
-
-    .footer-contact {
-        padding-bottom: 1.5rem;
-    }
-
-}
-
-/* tablet=========================== */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    nav.navbar {
-        padding: 1rem 0;
-    }
-
-    nav.navbar .navbar-brand img {
-        width: 10dvw;
-    }
-
-    nav.navbar button>span {
-        font-size: 2rem;
-    }
-
-    nav.navbar .collapse {
-        padding-top: 1rem;
-    }
-
-    nav.navbar .nav-link {
-        width: fit-content;
-        font-size: 1.4rem;
-    }
-
-    /* about========================== */
-    section.about .edu-card p {
-        letter-spacing: 0rem;
-        text-align: left;
-    }
-
-    section.about .edu-card {
-        height: 25dvh;
-    }
-
-    /* skills */
-    .skills .skills-container h3 {
-        font-size: 1.2rem;
-    }
-
-    .skills .skills-container .skill p.api {
-        font-size: .95rem;
-    }
-
-    /* footer=================== */
     footer .footer-about,
     footer .footer-links,
     footer .footer-contact {
-        text-align: center;
+        flex: 1 1 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
-    footer p {
+    .footer-links h2 {
+        width: 100%;
+    }
+
+    .footer-links .d-flex {
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+
+
+/* Mobile============================ */
+@media (max-width: 576px) {
+
+
+    /* Navbar ===================*/
+    nav.navbar .navbar-brand img {
+        width: 14dvw;
+    }
+
+    /* sction title====================== */
+    .title h2 {
+        font-size: 3rem;
+        letter-spacing: .25rem;
+    }
+
+    .title h3 {
+        font-size: 1.5rem !important;
+        letter-spacing: .2rem;
+    }
+
+    /* Hero===================== */
+    .hero {
+        padding-top: 5rem;
+    }
+
+    .hero-photo-frame {
+        order: 2;
+    }
+
+    .hero .hero-info h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero .hero-info>span {
+        font-size: .9rem;
+    }
+
+    .hero .job-title {
+        font-size: 1.1rem;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 13rem;
+        }
+    }
+
+    .desc {
+        width: 100%;
+        font-size: .9rem;
+        line-height: 1.7rem;
+    }
+
+    .hero .action-buttons a {
+        padding: .7rem 1.1rem;
+        font-size: .9rem;
+    }
+
+    .hero-photo-frame {
+        width: 13rem;
+        height: 13rem;
+    }
+
+
+    /* About=======================*/
+    section.about {
+        padding: 2rem 0;
+    }
+
+    section.about p {
+        font-size: .95rem;
+    }
+
+    section.about .about-info h3 {
+        font-size: 1.15rem;
+    }
+
+    /* Skills =======================*/
+    .skill-badge img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    /* Experience==========================*/
+    section.experience .timeline {
+        padding-left: 1.8rem;
+    }
+
+    section.experience .timeline::before {
+        left: 0;
+    }
+
+    section.experience .exp-card h4 {
+        font-size: 1rem;
+    }
+
+    section.experience .exp-card p {
+        margin-top: 1rem;
+    }
+
+    /* Services ================*/
+    section.services {
+        padding: 2rem 1rem;
+    }
+
+    section.services .card {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    /* Projects ===============*/
+    #projectTabs {
+        gap: .25rem;
+    }
+
+    #projectTabs .nav-link {
+        padding: .4rem .75rem;
+        font-size: .85rem;
+    }
+
+    .project-body h3 {
+        font-size: 1.2rem !important;
+    }
+
+    /* Contact ========================*/
+    section.contact {
         text-align: center !important;
     }
 
-    footer h2 {
-        width: 100% !important;
+    section.contact .rounding {
+        width: 17rem !important;
+        height: 17rem !important;
     }
 
+    section.contact .circle {
+        top: -1.25rem;
+        left: -.65rem;
+    }
+
+    section.contact .icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .icon i {
+        font-size: 1.2rem;
+    }
+
+    section.contact .contact-cards .card {
+        height: auto;
+        padding: 1rem;
+    }
+
+    /* Footer ======================*/
+    .footer-icons a {
+        width: 2.4rem;
+        height: 2.4rem;
+        font-size: .9rem;
+    }
+
+    .footer-bottom {
+        font-size: .8rem;
+        border-radius: 0;
+    }
 }
+
+
+/*XS — Very small phones (≤ 400px) =====================================*/
+@media (max-width: 400px) {
+
+    .hero .hero-info h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-photo-frame {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .hero .action-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero .action-buttons a {
+        width: 80%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .title h2 {
+        font-size: 2.2rem;
+    }
+
+    .title h3 {
+        font-size: 1.25rem !important;
+    }
+
+    section.contact .rounding {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    section.contact .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .icon i {
+        font-size: 1rem;
+    }
+
+    section.services .card {
+        padding: 1.2rem;
+    }
+
+    #projectTabs .nav-link {
+        font-size: .78rem;
+        padding: .35rem .6rem;
+    }
+}
+
+/* ================= CONTACT MOBILE FIX ================= */
