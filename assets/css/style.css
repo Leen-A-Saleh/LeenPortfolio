@@ -929,7 +929,7 @@ section.contact .contact-cards .card {
 }
 
 .info p {
-    color: #333;
+    color: #333 !important;
     font-size: .9rem;
     font-weight: 500;
 }
