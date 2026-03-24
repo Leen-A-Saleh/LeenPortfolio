@@ -375,6 +375,9 @@
 
 
     /* Navbar ===================*/
+    nav .nav-link{
+        width: fit-content;
+    }
     nav.navbar .navbar-brand img {
         width: 14dvw;
     }
