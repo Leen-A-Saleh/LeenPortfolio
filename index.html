@@ -39,16 +39,31 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom css -->
-    <link rel="stylesheet" href="assets/css/style.css?v3">
+    <link rel="stylesheet" href="assets/css/style.css?v4">
     <!-- media css -->
-    <link rel="stylesheet" href="assets/css/media.css?v3">
+    <link rel="stylesheet" href="assets/css/media.css?v4">
 </head>
 
 <body>
+    <!-- start Preloader -->
+    <div class="preloader" id="preloader">
+        <img src="assets/img/logo-removebg.png" alt="logo" class="loader-logo">
+    </div>
+    <!-- end preloader -->
+
+    <!-- start top btn -->
+    <div class="topBtn position-fixed bottom-0 end-0 me-2 mb-2 rounded-circle  d-flex justify-content-center align-items-center"
+        id="topBtn">
+        <div class="topProgress rounded-circle  d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </div>
+    <!-- end top btn -->
+
     <!-- start header/hero section -->
     <header class="vh-100" id="home">
         <!-- start nav -->
-        <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 mb-2 mb-md-4">
+        <nav class="navbar navbar-expand-lg mb-2 mb-md-4" id="nav">
             <div class="container">
                 <a class="navbar-brand w-50" href="index.html"><img src="assets/img/logo-removebg.png"
                         alt="Leen ANas Logo" class="img-fluid"></a>
@@ -60,7 +75,7 @@
                 <div class="collapse navbar-collapse w-50" id="navbarNav">
                     <ul class="navbar-nav w-100 d-flex justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
@@ -369,6 +384,46 @@
 
                                     <div class="project-img">
 
+                                        <img src="assets/img/Projects/Gold.png" class="img-fluid"
+                                            alt="Gold Tracking Website">
+
+                                        <div class="overlay">
+                                            <a href="https://zaidkh03.github.io/Gold-Tracker-App/" target="_blank"
+                                                rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="project-body">
+                                        <h3>Gold Tracking</h3>
+                                        <p>This project focuses on building a practical web application that simulates a
+                                            real-world gold tracking platform, where users can view live gold prices and
+                                            manage their own gold assets.
+
+                                            The application will rely on real API data to calculate different gold
+                                            values (gram, karat, coins, and bars), convert currencies, and provide
+                                            insights into user-owned assets such as profit and loss.</p>
+                                        <p><span>HTML</span> <span>CSS</span> <span>Bootstrap</span>
+                                            <span>JavaScript</span>
+                                        </p>
+
+                                        <div class="links">
+                                            <a href="https://github.com/zaidkh03/Gold-Tracker-App" target="_blank"
+                                                rel="noopener noreferrer" class="btn btn-sm">GitHub Code</a>
+                                            <a href="https://zaidkh03.github.io/Gold-Tracker-App/" target="_blank"
+                                                rel="noopener noreferrer" class="btn btn-sm">Live
+                                                Demo</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="project-card">
+
+                                    <div class="project-img">
+
                                         <img src="assets/img/Projects/nostalgia.png" class="img-fluid"
                                             alt="Nostalgia Website">
 
@@ -431,43 +486,6 @@
                                                 rel="noopener noreferrer" class="btn btn-sm">GitHub Code</a>
                                             <a href="https://leen-a-saleh.github.io/Services-Provider-Website/"
                                                 target="_blank" rel="noopener noreferrer" class="btn btn-sm">Live
-                                                Demo</a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="project-card">
-
-                                    <div class="project-img">
-
-                                        <img src="assets/img/Projects/fix.png" class="img-fluid" alt="Repair Website">
-
-                                        <div class="overlay">
-                                            <a href="https://leen-a-saleh.github.io/Fix/" target="_blank"
-                                                rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="project-body">
-                                        <h3>Device Repairs</h3>
-                                        <p>This website presents a professional device repair and tech service business
-                                            that offers repair solutions for computers, laptops, phones, tablets, and
-                                            other electronics. It highlights pricing packages, repair services, customer
-                                            reviews, and an online shop for tech products and accessories, making it a
-                                            complete platform for both device maintenance and electronics sales.</p>
-                                        <p><span>HTML</span> <span>CSS</span>
-                                        </p>
-
-                                        <div class="links">
-                                            <a href="https://github.com/Leen-A-Saleh/Fix" target="_blank"
-                                                rel="noopener noreferrer" class="btn btn-sm">GitHub Code</a>
-                                            <a href="https://leen-a-saleh.github.io/Fix/" target="_blank"
-                                                rel="noopener noreferrer" class="btn btn-sm">Live
                                                 Demo</a>
                                         </div>
 
@@ -566,34 +584,38 @@
                     <div class="tab-pane fade" id="frontend">
                         <div class="row g-4">
 
-                            <div class="col-12 col-md-6 col-lg-4">
+                                                        <div class="col-12 col-md-6 col-lg-4">
                                 <div class="project-card">
 
                                     <div class="project-img">
 
-                                        <img src="assets/img/Projects/fix.png" class="img-fluid" alt="Repair Website">
+                                        <img src="assets/img/Projects/Gold.png" class="img-fluid"
+                                            alt="Gold Tracking Website">
 
                                         <div class="overlay">
-                                            <a href="https://leen-a-saleh.github.io/Fix/" target="_blank"
+                                            <a href="https://zaidkh03.github.io/Gold-Tracker-App/" target="_blank"
                                                 rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
                                         </div>
 
                                     </div>
 
                                     <div class="project-body">
-                                        <h3>Device Repairs</h3>
-                                        <p>This website presents a professional device repair and tech service business
-                                            that offers repair solutions for computers, laptops, phones, tablets, and
-                                            other electronics. It highlights pricing packages, repair services, customer
-                                            reviews, and an online shop for tech products and accessories, making it a
-                                            complete platform for both device maintenance and electronics sales.</p>
-                                        <p><span>HTML</span> <span>CSS</span>
+                                        <h3>Gold Tracking</h3>
+                                        <p>This project focuses on building a practical web application that simulates a
+                                            real-world gold tracking platform, where users can view live gold prices and
+                                            manage their own gold assets.
+
+                                            The application will rely on real API data to calculate different gold
+                                            values (gram, karat, coins, and bars), convert currencies, and provide
+                                            insights into user-owned assets such as profit and loss.</p>
+                                        <p><span>HTML</span> <span>CSS</span> <span>Bootstrap</span>
+                                            <span>JavaScript</span>
                                         </p>
 
                                         <div class="links">
-                                            <a href="https://github.com/Leen-A-Saleh/Fix" target="_blank"
+                                            <a href="https://github.com/zaidkh03/Gold-Tracker-App" target="_blank"
                                                 rel="noopener noreferrer" class="btn btn-sm">GitHub Code</a>
-                                            <a href="https://leen-a-saleh.github.io/Fix/" target="_blank"
+                                            <a href="https://zaidkh03.github.io/Gold-Tracker-App/" target="_blank"
                                                 rel="noopener noreferrer" class="btn btn-sm">Live
                                                 Demo</a>
                                         </div>
@@ -734,6 +756,8 @@
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

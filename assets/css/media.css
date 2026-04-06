@@ -39,9 +39,14 @@
 /* Tablet==================== */
 @media (max-width: 992px) {
 
+
     /* Navbar */
     nav.navbar .navbar-brand img {
         width: 8dvw;
+    }
+
+    nav.navbar .nav-link {
+        width: fit-content;
     }
 
     /* Hero */
@@ -156,7 +161,7 @@
         margin: 0 auto;
     }
 
-  
+
     .icon:nth-child(2) {
         right: -1.1rem;
     }
@@ -375,9 +380,10 @@
 
 
     /* Navbar ===================*/
-    nav .nav-link{
+    nav .nav-link {
         width: fit-content;
     }
+
     nav.navbar .navbar-brand img {
         width: 14dvw;
     }
